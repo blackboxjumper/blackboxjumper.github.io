@@ -22,12 +22,11 @@
 					⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
 
 	
-wiki home
 -->
 
 <html>
     <head>
-        <title>Wiki | Black Box Jumper</title>
+        <title>Score counter | Black Box Jumper</title>
 		<link rel="shortcut icon" type="image/jpg" href="https://raw.githubusercontent.com/Ghost-Miner/Ghost-Miner.github.io/main/blackboxjumper/img/favicon.png"/>
 
 		<meta charset="utf-8">
@@ -54,9 +53,6 @@ wiki home
 		box-sizing:border-box;
 		float:left; 	}
 
-	.alert{
-		width: 100%;
-	}
 	.center 
 	{	margin: auto;
 		height: 100%;
@@ -69,16 +65,14 @@ wiki home
 	.right
 	{	width: 15%; 	}
 
-	#content{
-		width: 100%;
-	}
-	#content-left{
-		width: 50%;
-	}
-	#content-right{
-		width: 50%;
-	}
-
+	#table-right
+	{	width:30%;
+		height: 100%;
+		margin-top: 3%; }
+	#content-left
+	{	width:65%;
+		height: 100%;
+		margin-right: 3%; }
 	#footer{
 		width: 100%;
 		margin-top: 5%; }
@@ -86,7 +80,7 @@ wiki home
 
 <div class="left"><p></p></div>
 <div class="center">
-
+	
 	<!-- M E N U -->
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		<!-- Brand/logo -->
@@ -110,54 +104,122 @@ wiki home
 			<a class="nav-link" href="https://ghost-miner.itch.io/bbj-level-editor">Level editor</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="https://blackboxjumper.github.io/wiki">Wiki</a>
+			<a class="nav-link" href="https://blackboxjumper.github.io/wiki/">Wiki</a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="https://ghost-miner.itch.io/black-box-jumper-online">Play online</a>
 		  </li>
 		</ul>
 	</nav>
-	<br><br>
-
-	<center>
-	<div class="alert alert-success">
-		<strong>In development</strong> <br> 
-		The wiki is in development. Some pages are unfinished and/or may not work properly.
-	</div>
-	</center>
 	<br>
-
-	<div id="content">
-		<center>
-		<h4>Currently available pages</h4>
-		<br>
-		</center>
-	</div>
-
 	<div id="content-left">
-		<center>
-			<h4><b>Game</b></h4>
-			<hr>
+		
+		<p>Score counter was introduced in 1.3 Test build 2. <br>
+			Although it is fully functional and you can get and lose points, it was never used for anything and never mentioned in the tutorial. <br>
+			The score counter was removed in 1.4 snapshot 3a. </p>
 
-			<a href="versions">Game versions</a> <br>
-		</center>
+		<br>
+		<h3><b>How it works</b></h3>
+		<hr>
 
+		<p>You get coins by collectiong keys and finishing the levels. <br>
+			You lose points for  dying and killing the enemies.</p>
+
+		<br>
+		<h3><b>History</b></h3>
+		<hr>
+
+		<table class="table table-striped" style="border-collapse: collapse; width: 100%; " border="0">
+			<tbody>
+				<td style=" text-align: center;" colspan="3"><strong>Windows Edition<br /></strong></td>
+				</tr>
+				<td style="width: 6.3447%;  text-align: center;" rowspan="3"><strong>1.3</strong></td>
+				<td style="width: 22.3957%; text-align: center;">
+				<p><em>Test build 2</em></p>
+				</td>
+				<td style="width: 71.2595%; ">
+				<p>Added score counter</p>
+				</td>
+				</tr>
+				<td style="width: 22.3957%;  text-align: center;">
+				<p><em>Test build 5</em></p>
+				</td>
+				<td style="width: 71.2595%; ">
+				<p>Shrank font size of scoure counter</p>
+				</td>
+				</tr>
+				<td style="width: 22.3957%;  text-align: center;">
+				<p><em>Release candidate 2</em></p>
+				</td>
+				<td style="width: 71.2595%; ">
+				<p>Unspecified bugfixes</p>
+				</td>
+				</tr>
+				<td style="width: 6.3447%; text-align: center;"><strong>1.4</strong></td>
+				<td style="width: 22.3957%; text-align: center;">
+				<p><em>Snapshot 3a</em></p>
+				</td>
+				<td style="width: 71.2595%; ">
+				<p>Removed score counter</p>
+				</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 
-	<div id="content-right">
-		<center>
-			<h4><b>Level editor</b></h4>
-			<hr>
+	<div id="table-right">
 
-			<a href="le-versions">Level editor versions</a>
-		</center>
+		<table class="table table-striped" style="border-collapse: collapse; width: 100%; height: 522px;" border="0">
+			<tbody>
+				<tr>
+				<td colspan="2">
+				<h2 style="text-align: center;"><strong>Score counter<br /></strong></h2>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://ghost-miner.github.io/blackboxjumper/web/wp-content/uploads/2021/04/bbj-score.png" alt="" /></td>
+				</tr>
+				<tr>
+				<td>
+				<p><strong>Type</strong></p>
+				</td>
+				<td>
+				<p>User Interface element</p>
+				</td>
+				</tr>
+				<tr>
+				<td>
+				<p><strong>Position</strong></p>
+				</td>
+				<td>
+				<p>Top right</p>
+				</td>
+				</tr>
+				<tr>
+				<td>
+				<p><strong>Introduced</strong></p>
+				</td>
+				<td>
+				<p>1.3 Test build 2 - 19th June 2020</p>
+				</td>
+				</tr>
+				<tr>
+				<td>
+				<p><strong>Removed</strong></p>
+				</td>
+				<td>
+				<p>1.4 Snapsht 3a - 30th December 2020</p>
+				</td>
+				</tr>
+			</tbody>
+		</table>
+
+		
 	</div>
-
 	<div id="footer">
 		<footer>
 			<iframe src="https://blackboxjumper.github.io/template/footer.html" frameborder="0" height="100%" width="100%"></iframe>
 		</footer>
-
 	</div>
 </div>
 <div class="rightt"></div>
