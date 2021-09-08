@@ -111,21 +111,58 @@
 		  </li>
 		</ul>
 	</nav>
-	<br>
+	<br/>
 	<div id="content-left">
 		
-		<p>Score counter was introduced in 1.3 Test build 2. <br>
-			Although it is fully functional and you can get and lose points, it was never used for anything and never mentioned in the tutorial. <br>
-			The score counter was removed in 1.4 snapshot 3a. </p>
+		<p>Score counter was introduced in 1.3 Test build 2. <br/>
+			Although it is functional and you can get and lose points, it was very buggy and broken and was never used for anything neither mentioned in the tutorial. <br/>
+			The score counter was removed in 1.4 snapshot 3a due to being very useless and quite broken. </p>
 
-		<br>
+		<br/>
 		<h3><b>How it works</b></h3>
 		<hr>
 
-		<p>You get coins by collectiong keys and finishing the levels. <br>
+		<p>You get coins by collectiong keys and finishing the levels. <br/>
 			You lose points for  dying and killing the enemies.</p>
 
-		<br>
+		<table class="table table-striped" style="border-collapse: collapse; width: 100%; " border="0">
+			<tbody>
+				<tr style="height: 18px;">
+				<th style="width: 50%; height: 18px; text-align: center;">Action</th>
+				<th style="width: 50%; height: 18px; text-align: center;">Event</th>
+				</tr>
+				<tr style="height: 18px;">
+				<td style="width: 50%; height: 18px; text-align: center;">Key picked up</td>
+				<td style="width: 50%; height: 18px; text-align: center;">Gains 10 points</td>
+				</tr>
+				<tr style="height: 18px;">
+				<td style="width: 50%; height: 18px; text-align: center;">Level finished</td>
+				<td style="width: 50%; height: 18px; text-align: center;">Gains 20 points</td>
+				</tr>
+				<tr style="height: 18px;">
+				<td style="width: 50%; height: 18px; text-align: center;">Enemy killled</td>
+				<td style="width: 50%; height: 18px; text-align: center;">Loses 5 points</td>
+				</tr>
+				<tr style="height: 18px;">
+				<td style="width: 50%; height: 18px; text-align: center;">Player death</td>
+				<td style="width: 50%; height: 18px; text-align: center;">Loses unknown amount of points <i>*</i> </td>
+				</tr>
+			</tbody>
+		</table>
+		<p><i>* check first point in bugs and other issues.</i></p>
+
+		<br/>
+
+		<h3><strong>Bugs and other issues</strong></h3>
+			<hr />
+			<ul>
+			<li>You don't lose points for dying because the level restarts when you die. Dying or running out of time restarts the level and resets all values to the last saved state which is when you touch the gate to next level.</li>
+			<li>Score counter cannot be reset by starting a new game or resetting the game progress. Can only be reset by restarting the game.</li>
+			<li>Score doesn't save. When you star the game you always start with 0 score no matter what level you're in.</li>
+			</ul>
+
+		<br/>
+
 		<h3><b>History</b></h3>
 		<hr>
 
